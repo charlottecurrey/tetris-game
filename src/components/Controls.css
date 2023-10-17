@@ -1,0 +1,23 @@
+.controls-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.control-button {
+  padding: 10px 20px;
+  background-color: #373b41;
+  color: #c5c8c6;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.control-button:hover {
+  background-color: #282a2d;
+}
+
+.control-button:active {
+  background-color: #1d1f21;
+}

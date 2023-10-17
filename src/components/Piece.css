@@ -1,0 +1,26 @@
+.piece {
+  background-color: #b5bd68; /* General color; you can override this for specific pieces */
+}
+
+/* You can add specific styles for different Tetris pieces by adding classes or attributes */
+.piece.I {
+  background-color: #81a2be;
+}
+.piece.O {
+  background-color: #f0c674;
+}
+.piece.T {
+  background-color: #b294bb;
+}
+.piece.S {
+  background-color: #8abeb7;
+}
+.piece.Z {
+  background-color: #cc6666;
+}
+.piece.J {
+  background-color: #ab4642;
+}
+.piece.L {
+  background-color: #de935f;
+}
