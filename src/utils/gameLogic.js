@@ -86,4 +86,20 @@ function createEmptyGrid() {
   return Array.from({ length: 20 }, () => Array(10).fill(0));
 }
 
-export { TETROMINOS, getRandomPiece, hasCollision, createEmptyGrid };
+const rotatePiece = (piece) => {
+  const rotatedShape = piece.shape[0].map((val, index) =>
+    piece.shape.map((row) => row[index])
+  );
+  return {
+    shape: rotatedShape.reverse(),
+    color: piece.color,
+  };
+};
+
+export {
+  TETROMINOS,
+  getRandomPiece,
+  hasCollision,
+  createEmptyGrid,
+  rotatePiece,
+};

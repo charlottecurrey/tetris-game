@@ -6,7 +6,7 @@ const CELL_SIZE = 30; // Assuming each cell in the grid is 30x30 pixels
 const Piece = ({ shape, position, color }) => {
   return (
     <div
-      className="tetris-piece"
+      className={`tetris-piece ${color}`} // Added the color prop as a class here
       style={{
         transform: `translate(${position.x * CELL_SIZE}px, ${
           position.y * CELL_SIZE

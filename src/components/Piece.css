@@ -1,26 +1,39 @@
-.piece {
-  background-color: #b5bd68; /* General color; you can override this for specific pieces */
+.tetris-piece-cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #333; /* Just for visibility */
 }
 
-/* You can add specific styles for different Tetris pieces by adding classes or attributes */
-.piece.I {
+/* Generic background color for cells; you can override this for specific pieces */
+.tetris-piece-cell {
+  background-color: #b5bd68;
+}
+
+/* Add specific styles for different Tetris pieces by modifying the tetris-piece-cell class based on the color */
+.tetris-piece-cell.I {
   background-color: #81a2be;
 }
-.piece.O {
+
+.tetris-piece-cell.O {
   background-color: #f0c674;
 }
-.piece.T {
+
+.tetris-piece-cell.T {
   background-color: #b294bb;
 }
-.piece.S {
+
+.tetris-piece-cell.S {
   background-color: #8abeb7;
 }
-.piece.Z {
+
+.tetris-piece-cell.Z {
   background-color: #cc6666;
 }
-.piece.J {
+
+.tetris-piece-cell.J {
   background-color: #ab4642;
 }
-.piece.L {
+
+.tetris-piece-cell.L {
   background-color: #de935f;
 }
